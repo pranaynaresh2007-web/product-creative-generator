@@ -1,0 +1,27 @@
+{
+  "api": {
+    "url": "http://127.0.0.1:7860",
+    "endpoint": "/api/txt2img",
+    "timeout": 300
+  },
+  "generation": {
+    "num_images": 100,
+    "width": 1080,
+    "height": 1080,
+    "steps": 25,
+    "cfg_scale": 7.5,
+    "sampler_name": "DPM++ 2M Karras",
+    "seed": -1
+  },
+  "output": {
+    "directory": "output_creatives",
+    "format": "png",
+    "naming_pattern": "creative_{index:03d}.png"
+  },
+  "negative_prompt": "blurry, low quality, distorted product, watermark, bad anatomy, extra objects",
+  "logging": {
+    "level": "INFO",
+    "show_progress": true,
+    "progress_interval": 25
+  }
+}
